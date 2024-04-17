@@ -1,0 +1,9 @@
+<p>Hijo</p>
+
+<h2>Lista de nuestros productos</h2>
+<p>Haga un clic en el producto que quiera añadir a la cesta</p>
+<ol>
+    @for (producto of productos; track productos) {
+        <li (click)="enviarPadre(producto)">{{producto}}</li>
+    }
+</ol>
